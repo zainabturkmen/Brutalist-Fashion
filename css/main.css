@@ -1,0 +1,99 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #F1EFE9;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+
+}
+
+.container{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.section{
+    background-color: #F1EFE9;
+    padding: 2em;
+    background-image: none;
+    margin-top: 20em;
+    height: 500px;
+    display: grid;
+    grid-template-areas: 
+     "tiger h1 h1"
+     "tiger dog content"
+     "fish dog content";
+    gap: 2em;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    grid-template-rows: auto 1fr 100px;
+    position: relative;
+}
+
+.section:before{
+    position: absolute;
+    content: "WOW";
+    color: black;
+    font-size: 30rem;
+    font-weight: 800;
+    z-index: -1;
+    top: -190px;
+    left: -300px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1{
+    grid-area: h1;
+}
+
+.tiger{
+    grid-area: tiger;
+}
+
+.dog{
+    grid-area: dog;
+}
+
+.fish{
+    grid-area: fish;
+}
+
+.content{
+    grid-area: content;
+}
+
+h1{
+    font-size: 8rem;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: .9;
+    color: #000;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+p, a{
+    text-transform: uppercase;
+     font-size: 2.2rem;
+     text-decoration: none;
+     color: #000;
+     margin: 0;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
