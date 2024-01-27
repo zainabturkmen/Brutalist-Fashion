@@ -85,18 +85,20 @@ h1{
 p, a{
     text-transform: uppercase;
      font-size: 2.2rem;
-     text-decoration: none;
      color: #000;
      margin: 0;
 }
 
+svg{
+    display: none;
+}
 a{
     display: flex;
     align-items: center;
     gap: 1em;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 655px) {
 
     .section {
         background-color: #F1EFE9;
@@ -113,5 +115,17 @@ a{
         grid-template-rows: repeat(2, auto) 100px;
         position: relative;
     }
-    
+
+    svg{
+        display: none;
+    }
+
+     a{
+         margin-top: 3em;
+         text-transform: uppercase;
+         font-size: 2.2rem;
+         color: #000;
+         margin: 0;
+         text-decoration: underline;
+    }
 }
