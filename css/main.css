@@ -97,7 +97,8 @@ a{
 }
 
 @media only screen and (min-with: 400px) {
-    .section{
+
+    .section {
         background-color: #F1EFE9;
         padding: 2em;
         background-image: none;
