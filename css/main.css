@@ -120,6 +120,10 @@ a{
         display: none;
     }
 
+    .container{
+        max-width: 1000px;
+    }
+
      a{
          margin-top: 3em;
          text-transform: uppercase;
