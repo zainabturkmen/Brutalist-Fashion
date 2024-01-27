@@ -9,7 +9,7 @@ body {
 
 .container{
     margin: 0 auto;
-    width: 1000px;
+    max-width: 1000px;
 }
 
 .section{
@@ -96,10 +96,10 @@ a{
     gap: 1em;
 }
 
-@media only screen and (max-with: 600px) {
+@media only screen and (max-width: 700px) {
 
     .section {
-        background-color: #1b1915;
+        background-color: #F1EFE9;
         padding: 2em;
         margin-top: 20em;
         height: 500px;
@@ -113,4 +113,6 @@ a{
         grid-template-rows: auto 1fr 100px;
         position: relative;
     }
+
+
 }
